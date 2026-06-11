@@ -1,6 +1,6 @@
 db = connect(
   'mongodb://' +
-    'localhost' +
+    process.env.MONGO_INITDB_HOSTNAME +
     ':27017/' +
     process.env.MONGO_INITDB_DATABASE,
 )
